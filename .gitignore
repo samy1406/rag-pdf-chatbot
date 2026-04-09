@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Ignore the vector database
+chroma_db/
+
+# Ignore downloaded data files
+data/
+
+# Ignore Python caches and virtual environments
+__pycache__/
+*.pyc
+.env
