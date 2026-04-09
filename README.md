@@ -13,7 +13,8 @@ This project utilizes a hybrid compute architecture to balance cost and performa
 1. **CPU Pipeline (GitHub Codespaces):** Handles document ingestion. Uses LangChain to parse PDFs, recursively chunk text, and generate dense vectors using the lightweight `all-MiniLM-L6-v2` sentence-transformer. The vectors are stored in a local ChromaDB instance.
 2. **GPU Pipeline (Google Colab):** Handles LLM inference. Loads the ChromaDB index and connects it to a 4-bit quantized `Zephyr-7B-beta` model via HuggingFace and `bitsandbytes` for context-aware question answering on a free T4 GPU.
 
-![Architecture Diagram](./demo/architecture.png) *(Note: Add diagram later)*
+
+![Architecture Diagram](image.png)
 
 ## Setup Instructions
 
